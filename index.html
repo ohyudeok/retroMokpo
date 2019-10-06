@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+		@font-face { font-family: 'Arita-dotum-Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
+		#wrap{width:1500px; overflow:hidden; margin:auto;}
+		body{margin:0;}
+		section{width:1500px; height:500px; position:relative; background:black; display:block; margin:auto;}
+		h1{ font-family: 'TmonMonsori'; font-size:100px; color:white; display:block; margin-left:28%; position:absolute; z-index:10; margin-top:200px; text-shadow: 8px 8px 0px black; position:absolute;}
+		h2{font-family: 'TmonMonsori'; font-size:50px;}
+		#a{background:url(1back.jpg); background-size:cover; background-attachment:fixed;}
+		#head1{position:fixed;}
+
+		#t1{opacity:0;}
+		
+		#b{background:white; background-size:cover; background-attachment:fixed; height:800px;}
+		#monitor{position:fixed; background:black; padding:5px; top:0; right:0; width:70px; height:20px; color:white;}
+		#img1{width:500px; opacity:0; top:300px; margin-left:58%; position:absolute;}
+		#img2{width:100px; top:100px; position:absolute; margin-left:58%; opacity:0;}
+		#img3{width:100px; top:250px; position:absolute; margin-left:55%; opacity:0;}
+		#img4{width:100px; top:250px; position:absolute; margin-left:87%; opacity:0;}
+		#img5{width:100px; top:100px; position:absolute; margin-left:82%; opacity:0;}
+		#head2{top:100px; position:absolute; margin-left:10%; opacity:0;}
+
+		.text{width:300px; position:absolute; left:350px; top:230px; font-size:10pt; line-height:1.8; font-family: 'Arita-dotum-Medium'; opacity:1;}
+		
+		#t2{top:525px; font-family: 'TmonMonsori'; margin-left:10%; position:absolute; opacity:0;}
+		#t22{top:525px; font-family: 'Arita-dotum-Medium'; margin-left:15%; position:absolute; font-size:10pt; opacity:0;}
+
+		#t3{top:560px; font-family: 'TmonMonsori'; margin-left:10%; position:absolute; opacity:0;}
+		#t33{top:560px; font-family: 'Arita-dotum-Medium'; margin-left:15%; position:absolute; font-size:10pt; opacity:0;}
+
+		#t4{top:595px; font-family: 'TmonMonsori'; margin-left:10%; position:absolute; opacity:0;}
+		#t44{top:595px; font-family: 'Arita-dotum-Medium'; margin-left:15%; position:absolute; font-size:10pt; opacity:0;}
+
+
+
+		@keyframes bt{
+			from{top:300px; opacity:0;}
+			to{top:100px; opacity:1;}
+		}
+
+		@keyframes bt1{
+			from{top:450px; opacity:0;}
+			to{top:250px; opacity:1;}
+		}
+
+		@keyframes bt2{
+			from{top:430px; opacity:0;}
+			to{top:230px; opacity:1;}
+		}
+
+		@keyframes bt3{
+			from{top:725px; opacity:0;}
+			to{top:525px; opacity:1;}
+		}
+
+		@keyframes bt4{
+			from{top:760px; opacity:0;}
+			to{top:560px; opacity:1;}
+		}
+
+		@keyframes bt5{
+			from{top:795px; opacity:0;}
+			to{top:595px; opacity:1;}
+		}
+
+		@keyframes ro{
+			to{transform:rotate(360deg);}
+		}
+
+		@keyframes opa{
+			from{opacity:0;}
+			to{opacity:1;}
+		}
+
+		@keyframes opa1{
+			from{opacity:1;}
+			to{opacity:0;}
+		}
+
+		#c{background:url(super.jpg); background-size:cover; background-attachment:fixed; height:800px;}
+		.text2{width:300px; position:absolute; left:1000px; top:230px; font-size:10pt; line-height:1.8; font-family: 'Arita-dotum-Medium'; opacity:1;}
+		#t10{background:black; padding:20px; color:white; left:1000px; opacity: 0;}
+		#t11{top:560px; font-family: 'TmonMonsori'; margin-left:15%; position:absolute; opacity:1; color:white;}
+		#t111{top:560px; font-family: 'Arita-dotum-Medium'; margin-left:20%; position:absolute; font-size:10pt; opacity:1; color:white;}
+
+		@keyframes rtol{
+			from{left:1200px; opacity:0;}
+			to{left:1000px; opacity:1;}
+		}
+
+		@keyframes ltor{
+			from{left:300px;}
+			to{left:1400px;}
+		}
+
+		@keyframes bt6{
+			from{top:900px; opacity:0;}
+			to{top:300px; opacity:1;}
+		}
+
+		#d{background:url(yudal.jpg); background-size:cover; background-attachment:fixed; height:800px;}
+		#dd{background:black; height:800px; width:1500px; opacity:0;}
+		#t30{color:white; opacity:0;}
+		#head3{top:100px; position:absolute; margin-left:10%; color:white; opacity:0;}
+
+		@keyframes opa2{
+			from{opacity:0;}
+			to{opacity:0.5;}
+		}
+
+		@keyframes rtol2{
+			from{left:1600px; opacity:0;}
+			to{left:600px; opacity:1;}
+		}
+
+		#e{background-attachment:fixed; height:800px; background:url(back2.jpg); background-repeat:no-repeat; background-size:cover;}
+		#t40{color:white; top:230px;}
+		#head4{top:100px; position:absolute; margin-left:55%; color:white; opacity:1; color:white;}
+		#bw{background:black; height:800px; width:1500px; opacity:1;}
+
+		
+		#f{background:url(yudalw.jpg); background-size:cover; background-attachment:fixed; height:800px;}
+		#fin{background:black; height:800px; width:1500px; opacity:0.5;}
+		#head5{top:100px; position:absolute; margin-left:10%; color:white; opacity:0;}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+	<section id="a">
+		<h1 id="head1">목포 레트로 여행</h1>
+		<img src="record.gif" style="margin:auto; display:block; width:500px; position:fixed; margin-left:34%;" id="record">
+		<img src="rec.gif" style="display:block; width:150px; margin-top: 20px; position:fixed; margin-left:20px;" id="rec">
+		<img src="footd.gif" style="position:fixed; margin-left:1100px; width:250px; margin-top:300px;" id="footd">
+	</section>
+	<section id="b">
+		<img src="history.png" id="img1">
+		<img src="jj1.png" id="img2">
+		<img src="jj2.png" id="img3">
+		<img src="jj4.png" id="img4">
+		<img src="jj5.png" id="img5">
+		<img src="ffootd.gif" id="img6" style="top:200px; position:absolute; opacity:0;">
+		
+		<h2 id="head2">목포근대역사관</h2>
+		<div class="text" id="t1">
+		목포에서 가장 오래된 이 건물은 1897년 10월 목포항이 개항되고, 1898년 10월 목포일본영사관이 목포에 설치됨에 따라 영사관으로 지어진 건물이다. 목포이사청, 목포부청사 등으로 사용되었고, 광복이후 1947년부터 목포시청, 1974년부터 (구)목포일본영사관, 1990년 1월부터는 목포문화원으로 사용되다 최근 목포문화원이 이전함에 따라 보수 후 2014년 목포근대역사관 1관으로 개관했다.
+		<br>
+		2019년 여름에 흥행리에 방영한 TVN 드라마, 아이유, 여진구 주연의 호텔 델루나 촬영지로 유명하다.
+		</div>
+		<div id="t2">
+			이용시간
+		</div>
+		<div id="t22">
+			09:00~18:00 (입장마감 17:00)
+		</div>
+		<div id="t3">
+			위치
+		</div>
+		<div id="t33">
+			전라남도 목포시 영산로29번길 6 (대의동2가)
+		</div>
+		<div id="t4">
+			문의
+		</div>
+		<div id="t44">
+			목포근대역사관 1관 061-242-0340
+		</div>
+
+	</section>
+	<section id="c">
+		<div class="text2" id="t10">
+		누적 관람객 700만 명을 넘어선 영화 ‘1987’ 촬영지 목포 서산동의 ‘연희네슈퍼’.
+		<br>
+		‘연희네슈퍼’는 영화 ‘1987’에서 평범한 87학번 대학 신입생 ‘연희’가 살던 달동네 구멍가게로, 이한열 역의 강동원과 연희 역의 김태리가 슈퍼 앞 평상에서 시국의 아픔을 진솔하게 이야기하는 장면이 촬영된 곳이다.
+		<br>
+		당시 촬영했던 영화 속 소품을 갖다놓고 촬영 당시 모습 그대로 재현해 놓고 관광객을 맞이하고 있다. 연희네슈퍼에는 영화 속에 나왔던 연탄, 생활용품, 과자류, 냉동고, 라디오 등각종 소품이 비치돼 영화 속 장면을 자연스레 떠올리게 한다.
+		</div>
+		<img src="bul.png" style="top:300px; position:absolute; opacity:0;" id="bul">
+		<img src="taxi.gif" style="top:400px; position:absolute;" id="taxi">
+
+
+	</section>
+
+	<section id="d">
+		<div id="dd"></div>
+		<h2 id="head3">유달유업카페</h2>
+		<div class="text" id="t30">
+		1980년대를 재현해낸 듯한 카페의 전반적인 분위기를 느끼고 싶다면, '유달유업'.
+		<br>
+		소품들 하나하나가 레트로 감성을 불러 일으킨다. 카페 안에 3공간의 룸이 마련되어 있다. 각 룸마다 다양한 소품들로 아기자기하게 꾸며져 있으니 곳곳에서 향취를 즐겨보는 것도 나름의 재미이다.
+		</div>
+		<img src="yudalw.jpg" style="width:550px; position:absolute; left:750px; top:100px; z-index:0; opacity:0;" id="yudal1">
+		<img src="yudal2.jpg" style="width:550px; position:absolute; left:140px; top:550px; z-index:0; opacity:0;" id="yudal2">
+		<img src="yudal3.jpg" style="width:550px; position:absolute; left:750px; top:550px; z-index:0; opacity:0;" id="yudal3">
+		<img src="yudal4.png" style="width:250px; position:absolute; left:600px; top:400px; opacity:0;" id="yudal4">
+	
+
+	</section>
+	<section id="e">
+		<div id="bw"></div>
+		<img src="pic.png" style="width:500px; opacity:1; top:300px; margin-left:10%; position:absolute;" id="pic">
+		<h2 id="head4">유달동 사진관</h2>
+		<dir class="text2" id="t40">
+			레트로 감성 흑백 사진을 찍고 싶다면, '유달동 사진관'으로 오세요.
+			<br>
+			부담스럽지 않고 저렴한 가격과 편안한 분위기 속에서 분위기 있는 흑백사진을 찍을 수 있답니다. 여행 기념 사진으로 한 장 남기면 좋겠죠?
+			
+		</dir>
+
+	</section>
+	<section id="f">
+		<div id="fin"></div>
+		<h1 id="head5">레트로 맛집 <br>목포로 놀러오세요!</h1>
+
+
+	</section>
+	<div id="monitor"></div>
+	</div>
+
+	<script type="text/javascript">
+
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		monitor.innerHTML = t.toFixed(1);
+		if(t > 200){ head1.style.animation = "opa1 1s forwards";}
+		else{head1.style.animation = "";}
+		if(t > 200){ record.style.animation = "opa1 2s forwards";}
+		else{record.style.animation = "";}
+		if(t > 200){ rec.style.animation = "opa1 2s forwards";}
+		else{rec.style.animation = "";}
+		if(t > 200){ footd.style.animation = "opa1 2s forwards";}
+		else{footd.style.animation = "";}
+
+		if(t > 350){ img1.style.animation = "bt 2s forwards";}
+		else{img1.style.animation = "";}
+
+		if(t > 350){ img2.style.animation = "bt 2s forwards";}
+		else{img2.style.animation = "";}
+
+		if(t > 350){ img5.style.animation = "bt 2s forwards";}
+		else{img5.style.animation = "";}
+
+		if(t > 350){ img3.style.animation = "bt1 2.5s forwards";}
+		else{img3.style.animation = "";}
+
+		if(t > 350){ img4.style.animation = "bt1 2.5s forwards";}
+		else{img4.style.animation = "";}
+
+		if(t > 350){ head2.style.animation = "bt 2s forwards";}
+		else{head2.style.animation = "";}
+
+		if(t > 350){ t1.style.animation = "bt2 2.5s forwards";}
+		else{t1.style.animation = "";}
+
+		if(t > 350){ t2.style.animation = "bt3 2.5s forwards";}
+		else{t2.style.animation = "";}
+
+		if(t > 350){ t22.style.animation = "bt3 2.5s forwards";}
+		else{t22.style.animation = "";}
+
+		if(t > 350){ t3.style.animation = "bt4 2.5s forwards";}
+		else{t3.style.animation = "";}
+
+		if(t > 350){ t33.style.animation = "bt4 2.5s forwards";}
+		else{t33.style.animation = "";}
+
+		if(t > 350){ t4.style.animation = "bt5 2.5s forwards";}
+		else{t4.style.animation = "";}
+
+		if(t > 350){ t44.style.animation = "bt5 2.5s forwards";}
+		else{t44.style.animation = "";}
+
+		if(t > 600){ img6.style.animation = "opa 2.5s forwards";}
+		else{img6.style.animation = "";}
+
+		if(t > 900){ t10.style.animation = "rtol 2s forwards";}
+		else{t10.style.animation = "";}
+
+		if(t > 1100){ taxi.style.animation = "ltor 5s infinite";}
+		else{taxi.style.animation = "";}
+		if(t > 1200){ bul.style.animation = "bt6 3s forwards";}
+		else{bul.style.animation = "";}
+
+		if(t > 1900){ dd.style.animation = "opa2 2s forwards";}
+		else{dd.style.animation = "";}
+
+		if(t > 1900){ head3.style.animation = "bt 2s forwards";}
+		else{head3.style.animation = "";}
+
+		if(t > 1900){ t30.style.animation = "bt2 2.5s forwards";}
+		else{t30.style.animation = "";}
+
+		if(t > 1900){ yudal1.style.animation = "opa 2s forwards";}
+		else{yudal1.style.animation = "";}
+
+		if(t > 1900){ yudal2.style.animation = "opa 2s forwards";}
+		else{yudal2.style.animation = "";}
+
+		if(t > 1900){ yudal3.style.animation = "opa 2s forwards";}
+		else{yudal3.style.animation = "";}
+
+		if(t > 2000){ yudal4.style.animation = "rtol2 4s forwards";}
+		else{yudal4.style.animation = "";}
+
+		if(t > 2300){ head4.style.animation = "bt 2s forwards";}
+		else{head4.style.animation = "";}
+
+		if(t > 2300){ t40.style.animation = "bt2 2.5s forwards";}
+		else{t40.style.animation = "";}
+
+		if(t > 2300){ pic.style.animation = "bt2 2.5s forwards";}
+		else{pic.style.animation = "";}
+
+
+		if(t > 2990){ bw.style.animation = "opa1 2s forwards";}
+		else{bw.style.animation = "";}
+
+		if(t > 3500){ head5.style.animation = "bt 2s forwards";}
+		else{head5.style.animation = "";}
+	}
+
+	</script>
+
+</body>
+</html>
